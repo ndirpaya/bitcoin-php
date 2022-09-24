@@ -22,6 +22,14 @@ class InputCollectionMutator extends AbstractCollectionMutator
 
         $this->set = \SplFixedArray::fromArray($set, false);
     }
+    
+    /**
+     * implement the method IteratorAggregate::getIterator
+     */
+    public function getIterator()
+    {
+        return $this->set->getIterator();
+    }
 
     /**
      * @return InputMutator
