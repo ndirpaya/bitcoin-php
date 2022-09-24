@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace BitWasp\Bitcoin\Transaction\Mutator;
 
-abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Countable
+abstract class AbstractCollectionMutator implements \IteratorAggregate, \ArrayAccess, \Countable
 {
     /**
      * @var \SplFixedArray
